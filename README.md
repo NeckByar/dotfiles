@@ -24,6 +24,6 @@ My current config files so I can grab them in the future.
 | Launcher | [rofi](http://github.com/davatorium/rofi) |
 | Wallpaper | [feh](https://github.com/derf/feh) |
 | Browser | [firefox](http://firefox.com) |
-| File Manager | [thunar](https://gitlab.xfce.org/xfce/thunar) |
+| File Manager | [Nemo](https://github.com/linuxmint/nemo#readme) |
 | Shell | [zsh](https://www.zsh.org/) |
 | Terminal | [termite](https://github.com/thestinger/termite) |
