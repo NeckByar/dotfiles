@@ -1,0 +1,8 @@
+#!/bin/zsh
+
+Upd=`checkupdates | wc -l`
+
+if [ $Upd -gt 0 ]; then
+echo Upd $Upd
+fi
+

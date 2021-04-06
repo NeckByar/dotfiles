@@ -1,0 +1,7 @@
+#!/bin/zsh
+
+aur=`pakku -Su --print-format '%r %n' | grep -Po '(?<=^aur ).*$' | wc -l`
+
+if [ $aur -gt 0 ]; then
+echo Aur $aur
+fi

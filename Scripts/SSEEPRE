@@ -1,0 +1,2 @@
+#!/bin/bash
+termite -e "fluidsynth --audio-driver=alsa /usr/share/soundfonts/FluidR3_GM.sf2"
