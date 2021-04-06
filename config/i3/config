@@ -1,1 +1,202 @@
-/home/neckbear/.config/i3/config
+
+ 	#startup#
+
+# background
+exec --no-startup-id ./.fehbg
+
+# compton
+exec --no-startup-id picom --experimental-backends -b
+
+# redshift
+exec --no-startup-id redshift
+
+# conky
+exec --no-startup-id conky
+
+# blur background
+exec --no-startup-id blurwal -m 1
+
+# hide mouse
+exec --no-startup-id unclutter
+
+# disable screen sleep
+exec --no-startup-id caffeine
+
+# disable beep
+exec --no-startup-id xset -b
+#
+
+
+	#key bindings#
+
+# mod key
+set $mod Mod1
+
+# font
+font pango:Terminus (TTF) 11
+
+# float mod
+floating_modifier $mod
+
+# start terminal
+bindsym $mod+Return exec --no-startup-id termite
+# kill focused window
+bindsym $mod+shift+q kill
+
+# start rofi run 
+bindsym $mod+d exec --no-startup-id rofi -show run -font "Terminus (TTF) 11" -hide-scrollbar -width 15 -lines 20 -disable-history -terminal termite -location 7 -xoffset 15 -yoffset -36 -m -4 -config ~/.rofi.rasi -no-click-to-exit
+
+# start rofi window
+bindsym $mod+Tab exec --no-startup-id  rofi -show window -window-format "{w}    {c}" -font "Terminus (TTF) 11" -hide-scrollbar -width 15 -lines 20  -disable-history -terminal termite -location 7 -xoffset 15 -yoffset -36 -m -4 -config ~/.rofi.rasi -no-click-to-exit
+
+# change focus (with arrow keys)
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# move focused window (with arrow keys)
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# split window
+bindsym $mod+h split h
+bindsym $mod+v split v
+
+# toggle fullscreen
+bindsym $mod+f fullscreen toggle
+
+# change window layout
+#bindsym $mod+s layout stacking
+#bindsym $mod+e layout toggle split
+#bindsym $mod+w layout tabbed
+
+# toggle tiling / floating 
+bindsym $mod+shift+space floating toggle
+
+# change focus between tiling /floating
+bindsym $mod+space focus mode_toggle
+
+# switch workspace
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
+bindsym $mod+6 workspace 6
+bindsym $mod+7 workspace 7
+bindsym $mod+8 workspace 8
+bindsym $mod+9 workspace 9
+bindsym $mod+0 workspace 10
+
+# move focused container to workspace 
+bindsym $mod+shift+1 move container to workspace 1
+bindsym $mod+shift+2 move container to workspace 2
+bindsym $mod+shift+3 move container to workspace 3
+bindsym $mod+shift+4 move container to workspace 4
+bindsym $mod+shift+5 move container to workspace 5
+bindsym $mod+shift+6 move container to workspace 6
+bindsym $mod+shift+7 move container to workspace 7
+bindsym $mod+shift+8 move container to workspace 8
+bindsym $mod+shift+9 move container to workspace 9
+bindsym $mod+shift+0 move container to workspace 10
+
+# reload configure file
+bindsym $mod+shift+c reload
+
+#restart i3
+bindsym $mod+shift+r restart
+
+# take screenshot
+bindsym Print exec --no-startup-id ~/Scripts/Screenshot
+
+# change volume
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer sset Master 5%+ unmute && pkill -RTMIN+10 i3blocks
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer sset Master 5%- unmute && pkill -RTMIN+10 i3blocks
+bindsym XF86AudioMute exec --no-startup-id amixer sset Master toggle && pkill -RTMIN+10 i3blocks
+
+# change mic
+bindsym $mod+XF86AudioRaiseVolume exec --no-startup-id amixer -D pulse sset Capture 5%+
+bindsym $mod+XF86AudioLowerVolume exec --no-startup-id amixer -D pulse sset Capture 5%-
+bindsym $mod+XF86AudioMute exec --no-startup-id amixer -D pulse sset Capture toggle
+
+# change screen brightness
+bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 5
+bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 5
+
+# power settings
+bindsym Control+Mod1+Delete exec --no-startup-id ~/Scripts/PowerSettings
+
+# change keyboard backlight
+bindsym XF86KbdBrightnessDown exec --no-startup-id asus-kbd-backlight down
+bindsym XF86KbdBrightnessUp exec --no-startup-id asus-kbd-backlight up
+
+# connect screen
+bindsym XF86Launch1 exec --no-startup-id ~/Scripts/NewScreen
+
+# play-pause
+bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
+
+# stop
+bindsym XF86AudioStop exec --no-startup-id playerctl stop
+
+# prev
+bindsym XF86AudioPrev exec --no-startup-id playerctl previous 
+
+# next
+bindsym XF86AudioNext exec --no-startup-id playerctl next
+
+# toggle redshift
+#bindsym XF86Launch1 exec --no-startup-id pkill -USR1 '^redshift$'
+
+# sticky to top right
+bindsym $mod+y fullscreen disable; floating enable; resize set 640 360; sticky enable; move window to position 1275 5
+#
+
+
+	#for window#
+
+#enable window border
+for_window [class=".*"] border pixel 1
+
+#
+
+
+	#i3bar#
+
+bar { 
+    colors{
+          background #0A1213
+          statusline #8dc2ab
+
+#          class             boarder backgr  text
+          focused_workspace  #334536 #334536 #8dc2ab
+          inactive_workspace #0A1213 #0A1213 #8dc2ab
+          active_workspace   #0A1213 #0A1213 #8dc2ab
+          urgent_workspace   #0A1213 #0A1213 #8dc2ab
+          separator          #334536
+    }
+    tray_padding 2
+    i3bar_command i3bar 
+    status_command i3blocks -c .i3blocks
+    font pango:Terminus (TTF) 11
+    position bottom
+}
+
+# class                 border  backgr  text    indicator
+client.focused          #334536 #334536 #8dc2ab #334536
+client.unfocused        #0A1213 #0A1213 #8dc2ab #0A1213
+client.focused_inactive #0A1213 #0A1213 #8dc2ab #0A1213
+client.placeholder      #0A1213 #0A1213 #8dc2ab #0A1213
+client.urgent           #0A1213 #0A1213 #8dc2ab #0A1213
+
+# gaps
+gaps outer 5
+gaps inner 10 
+smart_borders on
+#
+
+
+

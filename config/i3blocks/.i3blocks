@@ -1,1 +1,17 @@
-/home/neckbear/.i3blocks
+[updates]
+command=~/Scripts/Updates
+interval=300
+[Aur]
+command=~/Scripts/Aur
+interval=300
+[Volume]
+command=~/Scripts/Volume
+interval=once
+signal=10
+[Date]
+command=date +%a\ %b\ %d
+interval=2
+[Time]
+border_right=0
+command=date +%I:%M%P
+interval=2
