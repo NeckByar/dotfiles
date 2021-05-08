@@ -1,0 +1,47 @@
+background_opacity: 0.55
+colors:
+  # Default colors
+  primary:
+    background: '#0A1213'
+    foreground: '#8dc2ab'
+
+  # Normal colors
+  normal:
+    black:   '#0A1213'
+    red:     '#334536'
+    green:   '#494936'
+    yellow:  '#6A512D'
+    blue:    '#205A4F'
+    magenta: '#4E5645'
+    cyan:    '#9B7430'
+    white:   '#8dc2ab'
+
+  # Bright colors
+  bright:
+    black:   '#628777'
+    red:     '#334536'
+    green:   '#494936'
+    yellow:  '#6A512D'
+    blue:    '#205A4F'
+    magenta: '#4E5645'
+    cyan:    '#9B7430'
+    white:   '#8dc2ab'
+
+font:
+  normal:
+    family: Terminus (TTF)
+    style: Regular
+
+  bold:
+    family: Terminus (TTF)
+    style: Bold
+
+  italic:
+    family: Terminus (TTF)
+    style: Italic
+
+  bold_italic:
+    family: Terminus (TTF)
+    style: Bold Italic
+
+  size: 12

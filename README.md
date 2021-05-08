@@ -26,4 +26,4 @@ My current config files so I can grab them in the future.
 | Browser | [firefox](http://firefox.com) |
 | File Manager | [nemo](https://github.com/linuxmint/nemo#readme) |
 | Shell | [zsh](https://www.zsh.org/) |
-| Terminal | [termite](https://github.com/thestinger/termite) |
+| Terminal | [alacritty](https://github.com/alacritty/alacritty) |

@@ -39,7 +39,7 @@ font pango:Terminus (TTF) 11
 floating_modifier $mod
 
 # start terminal
-bindsym $mod+Return exec --no-startup-id termite
+bindsym $mod+Return exec --no-startup-id alacritty
 # kill focused window
 bindsym $mod+shift+q kill
 
