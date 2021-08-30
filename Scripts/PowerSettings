@@ -1,9 +1,9 @@
 #!/bin/zsh
 
-action=$(echo -e "Lock\nLogout\nSuspend\nReboot\nShutdown" | rofi -theme-str 'inputbar { enabled: false;}' -dmenu -p "Power" -i -font "Terminus (TTF) 12" -hide-scrollbar -lines 5 -disable-history -width 15 -config ~/.rofi.rasi -no-click-to-exit)
+action=$(echo -e "Lock\nLogout\nSuspend\nReboot\nShutdown" | rofi -dmenu -theme ~/.config/rofi/.rofi.theme.powersettings -config ~/.config/rofi/.rofi.config -location 0)
 
 case $action in
-    Lock) betterlockscreen -l ;;
+    Lock) betterlockscreen -l -- --greeter-text="" --keylayout 3;;
     Logout) killall i3 ;;
     Suspend) systemctl suspend ;;
     Reboot) systemctl reboot ;;

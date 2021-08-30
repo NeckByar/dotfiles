@@ -1,0 +1,3 @@
+#!/bin/bash
+
+while true; do /home/neckbear/Scripts/pulse-volume-watcher | xob; done
