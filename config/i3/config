@@ -24,6 +24,10 @@ exec --no-startup-id caffeine
 
 # disable beep
 exec --no-startup-id xset -b
+
+# volume bar
+exec --no-startup-id /home/neckbear/Scripts/VolXob
+
 #
 
 
@@ -44,10 +48,10 @@ bindsym $mod+Return exec --no-startup-id alacritty
 bindsym $mod+shift+q kill
 
 # start rofi run 
-bindsym $mod+d exec --no-startup-id rofi -show run -font "Terminus (TTF) 11" -hide-scrollbar -width 15 -lines 20 -disable-history -terminal termite -location 7 -xoffset 15 -yoffset -36 -m -4 -config ~/.rofi.rasi -no-click-to-exit
+bindsym $mod+d exec --no-startup-id rofi -show run -theme ~/.config/rofi/.rofi.theme -config ~/.config/rofi/.rofi.config
 
 # start rofi window
-bindsym $mod+Tab exec --no-startup-id  rofi -show window -window-format "{w}    {c}" -font "Terminus (TTF) 11" -hide-scrollbar -width 15 -lines 20  -disable-history -terminal termite -location 7 -xoffset 15 -yoffset -36 -m -4 -config ~/.rofi.rasi -no-click-to-exit
+bindsym $mod+Tab exec --no-startup-id rofi -show window -theme ~/.config/rofi/.rofi.theme -config ~/.config/rofi/.rofi.config
 
 # change focus (with arrow keys)
 bindsym $mod+Left focus left
