@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-action=$(echo -e "Screenshot (Fullscreen)\nScreenshot (Focused)" | rofi -theme-str 'inputbar { enabled: false;}' -dmenu -p "Screenshot:" -i -font "Terminus (TTF) 11" -hide-scrollbar -lines 2 -disable-history -width 15 -config ~/.rofi.rasi -no-click-to-exit)
+action=$(echo -e "Screenshot (Fullscreen)\nScreenshot (Focused)" | rofi -theme-str 'listview { lines: 2;} inputbar { enabled: false;}' -dmenu -theme ~/.config/rofi/.rofi.theme -config ~/.config/rofi/.rofi.config -location 0)
 
 case $action in
     "Screenshot (Fullscreen)") scrot -d 1 -e 'mv $f ~/Screenshots' ;;
