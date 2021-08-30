@@ -27,3 +27,4 @@ My current config files so I can grab them in the future.
 | File Manager | [nemo](https://github.com/linuxmint/nemo#readme) |
 | Shell | [zsh](https://www.zsh.org/) |
 | Terminal | [alacritty](https://github.com/alacritty/alacritty) |
+|Volume Bar | [xob](https://github.com/florentc/xob) |
