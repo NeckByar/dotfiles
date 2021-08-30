@@ -5,7 +5,7 @@ My current config files so I can grab them in the future.
 
 ## cluttered
 
-![Alt text](/screenshots/2020-12-12-183411_1920x1080_scrot.png?raw=true)
+![Alt text](/screenshots/2021-08-30-110812_1920x1080_scrot.png?raw=true)
 
 ## Clean
 
