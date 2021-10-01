@@ -3,13 +3,13 @@ My current config files so I can grab them in the future.
 
 # Pics
 
-## cluttered
-
-![Alt text](/screenshots/2021-08-30-110812_1920x1080_scrot.png?raw=true)
-
 ## Clean
 
 ![Alt text](/screenshots/2020-12-12-183500_1920x1080_scrot.png?raw=true)
+
+## Cluttered
+
+![Alt text](/screenshots/2021-08-30-110812_1920x1080_scrot.png?raw=true)
 
 ## Wallpaper
 
