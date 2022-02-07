@@ -1,4 +1,5 @@
-background_opacity: 0.55
+window:
+    opacity: 0.55
 colors:
   # Default colors
   primary:
