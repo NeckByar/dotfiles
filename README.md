@@ -5,11 +5,11 @@ My current config files so I can grab them in the future.
 
 ## Clean
 
-![Alt text](/screenshots/2020-12-12-183500_1920x1080_scrot.png?raw=true)
+![Alt text](/screenshots/clean.png?raw=true)
 
 ## Cluttered
 
-![Alt text](/screenshots/2021-08-30-110812_1920x1080_scrot.png?raw=true)
+![Alt text](/screenshots/cluttered.png?raw=true)
 
 ## Wallpaper
 
