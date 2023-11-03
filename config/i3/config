@@ -152,7 +152,7 @@ bindsym XF86AudioNext exec --no-startup-id playerctl next
 #bindsym XF86Launch1 exec --no-startup-id pkill -USR1 '^redshift$'
 
 # sticky to top right
-bindsym $mod+y fullscreen disable; floating enable; resize set 640 360; sticky enable; move window to position 1275 5
+bindsym $mod+y fullscreen disable; floating enable; resize set 640 360; sticky enable; move window to position 1272 8
 #
 
 
