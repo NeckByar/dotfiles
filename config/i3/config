@@ -44,10 +44,10 @@ bindsym $mod+Return exec --no-startup-id alacritty
 bindsym $mod+shift+q kill
 
 # start rofi run 
-bindsym $mod+d exec --no-startup-id rofi -show run -theme ~/.config/rofi/.rofi.theme -config ~/.config/rofi/.rofi.config
+bindsym $mod+d exec --no-startup-id rofi -threads 1 -show run -theme ~/.config/rofi/.rofi.theme -config ~/.config/rofi/.rofi.config
 
 # start rofi window
-bindsym $mod+Tab exec --no-startup-id rofi -show window -theme ~/.config/rofi/.rofi.theme -config ~/.config/rofi/.rofi.config
+bindsym $mod+Tab exec --no-startup-id rofi -threads 1 -show window -theme ~/.config/rofi/.rofi.theme -config ~/.config/rofi/.rofi.config
 
 # change focus (with arrow keys)
 bindsym $mod+Left focus left
@@ -172,7 +172,7 @@ bar {
           statusline #8dc2ab
 
 #          class             boarder backgr  text
-          focused_workspace  #334536 #334536 #8dc2ab
+          focused_workspace  #205A4F #205A4F #8dc2ab
           inactive_workspace #0A1213 #0A1213 #8dc2ab
           active_workspace   #0A1213 #0A1213 #8dc2ab
           urgent_workspace   #0A1213 #0A1213 #8dc2ab
@@ -187,7 +187,7 @@ bar {
 }
 
 # class                 border  backgr  text    indicator
-client.focused          #334536 #334536 #8dc2ab #334536
+client.focused          #205A4F #205A4F #8dc2ab #205A4F
 client.unfocused        #0A1213 #0A1213 #8dc2ab #0A1213
 client.focused_inactive #0A1213 #0A1213 #8dc2ab #0A1213
 client.placeholder      #0A1213 #0A1213 #8dc2ab #0A1213
