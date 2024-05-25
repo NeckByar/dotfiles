@@ -3,6 +3,6 @@
 action=$(echo -e "Doom 3\nResurrection of Evil" | rofi -theme-str 'listview { lines: 2;} inputbar { enabled: false;}' -dmenu -theme ~/.config/rofi/.rofi.theme -config ~/.config/rofi/.rofi.config -location 0)
 
 case $action in
-    'Doom 3') dhewm3 ;;
-    'Resurrection of Evil') dhewm3 +set fs_game d3xp ;;
+    'Doom 3') mangohud --dlsym dhewm3 ;;
+    'Resurrection of Evil') mangohud --dlsym dhewm3 +set fs_game d3xp ;;
 esac
