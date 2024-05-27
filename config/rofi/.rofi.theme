@@ -1,32 +1,28 @@
 * {
-    red:                         rgba ( 220, 50, 47, 100 % );
-    selected-active-foreground:  var(foreground);
-    lightfg:                     rgba ( 88, 104, 117, 100 % );
+    selected-active-foreground:  var(background);
     separatorcolor:              var(foreground);
     urgent-foreground:           var(foreground);
     alternate-urgent-background: var(background);
-    lightbg:                     rgba ( 238, 232, 213, 100 % );
     background-color:            var(background);
     border-color:                var(background);
     normal-background:           var(background);
-    selected-urgent-background:  rgba ( 106, 81, 45, 100 % );
+    selected-urgent-background:  var(foreground);
     alternate-active-background: var(background);
-    spacing:                     2;
-    blue:                        rgba ( 38, 139, 210, 100 % );
     alternate-normal-foreground: var(foreground);
-    urgent-background:           rgba ( 32, 90, 79, 100 % );
-    selected-normal-foreground:  var(foreground);
+    urgent-background:           var(foreground);
+    selected-normal-foreground:  var(background);
     active-foreground:           var(foreground);
     background:                  rgba ( 10, 18, 19, 100 % );
-    selected-active-background:  rgba ( 32, 90, 79, 100 % );
-    active-background:           rgba ( 10, 18, 19, 100 % );
-    selected-normal-background:  rgba ( 32, 90, 79, 100 % );
+    selected-active-background:  var(foreground);
+    active-background:           var(background);
+    selected-normal-background:  var(foreground);
     alternate-normal-background: var(background);
     foreground:                  rgba ( 141, 194, 171, 100 % );
-    selected-urgent-foreground:  var(foreground);
+    selected-urgent-foreground:  var(background);
     normal-foreground:           var(foreground);
     alternate-urgent-foreground: var(foreground);
     alternate-active-foreground: var(foreground);
+    spacing:                     2;
 }
 element {
     padding: 1px ;
