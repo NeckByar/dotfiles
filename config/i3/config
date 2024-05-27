@@ -172,7 +172,7 @@ bar {
           statusline #8dc2ab
 
 #          class             boarder backgr  text
-          focused_workspace  #205A4F #205A4F #8dc2ab
+          focused_workspace  #8dc2ab #8dc2ab #0A1213
           inactive_workspace #0A1213 #0A1213 #8dc2ab
           active_workspace   #0A1213 #0A1213 #8dc2ab
           urgent_workspace   #0A1213 #0A1213 #8dc2ab
@@ -187,7 +187,7 @@ bar {
 }
 
 # class                 border  backgr  text    indicator
-client.focused          #205A4F #205A4F #8dc2ab #205A4F
+client.focused          #8dc2ab #8dc2ab #8dc2ab #0A1213
 client.unfocused        #0A1213 #0A1213 #8dc2ab #0A1213
 client.focused_inactive #0A1213 #0A1213 #8dc2ab #0A1213
 client.placeholder      #0A1213 #0A1213 #8dc2ab #0A1213
